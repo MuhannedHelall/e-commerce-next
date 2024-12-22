@@ -50,6 +50,7 @@ function Navbar() {
                       <Link
                         href="/"
                         className="flex items-center justify-between py-2"
+                        key={item}
                       >
                         <span key={item} className="capitalize">
                           {item}
@@ -105,6 +106,7 @@ function Navbar() {
               <LinkItem
                 key={item}
                 className="font-semibold hover:after:-bottom-[7px]"
+                href=""
               >
                 {item}
               </LinkItem>

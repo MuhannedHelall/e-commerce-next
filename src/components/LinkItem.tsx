@@ -1,6 +1,14 @@
 import Link from "next/link";
 
-function LinkItem({ href = "", className, children }: any) {
+function LinkItem({
+  href = "",
+  className,
+  children,
+}: {
+  href: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
   return (
     <Link
       href={href}
