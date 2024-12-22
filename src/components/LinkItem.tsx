@@ -5,7 +5,7 @@ function LinkItem({
   className,
   children,
 }: {
-  href: string;
+  href?: string;
   className?: string;
   children: React.ReactNode;
 }) {
