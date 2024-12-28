@@ -1,10 +1,11 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 
 const poppins = Poppins({
-  weight: ["300", "400", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiase`}>
+      <body className={`${poppins.className} antialiase bg-slate-50`}>
         <SpeedInsights />
         {children}
       </body>

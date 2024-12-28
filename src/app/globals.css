@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container-fluid {
+    @apply w-11/12 lg:w-4/5 mx-auto;
+  }
+
+  .text-title {
+    @apply text-4xl uppercase text-blue-950 font-semibold;
+  }
+
+  .heart-icon {
+    @apply absolute top-0 right-4 bg-slate-100 py-3 px-2 rounded-b-xl hover:scale-125 transition duration-300 active:scale-110 cursor-pointer
+  }
+
+  .section-btn {
+    @apply border border-blue-700 text-blue-700 rounded-3xl text-base px-3 py-2 flex items-center space-x-5 hover:bg-blue-700 hover:text-white transition
+  }
+}

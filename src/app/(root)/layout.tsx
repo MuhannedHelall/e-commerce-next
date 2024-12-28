@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Fragment>
       <Navbar />
-      {children}
+      <main className="container-fluid">{children}</main>
       <Footer />
     </Fragment>
   );

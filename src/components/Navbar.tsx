@@ -13,19 +13,19 @@ import Dropdown from "./Dropdown";
 import BurgerIcon from "./BurgerIcon";
 import ShoppingCart from "./ShoppingCart";
 
+export const categories = [
+  "End of year",
+  "Mobiles & Tablets",
+  "Televisions",
+  "Large Appliances",
+  "Small Appliances",
+  "Kitchen Appliances",
+  "Laptops & PCs",
+  "Health & Beauty",
+  "Electronics",
+  "Installment",
+];
 function Navbar() {
-  const categories = [
-    "End of year",
-    "Mobiles & Tablets",
-    "Televisions",
-    "Large Appliances",
-    "Small Appliances",
-    "Kitchen Appliances",
-    "Laptops & PCs",
-    "Health & Beauty",
-    "Electronics",
-    "Installment",
-  ];
   return (
     <header className="relative bg-blue-700 text-white rounded-b-3xl">
       <div className="w-11/12 lg:w-4/5 mx-auto pt-4">
